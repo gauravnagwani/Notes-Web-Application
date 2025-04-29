@@ -49,50 +49,65 @@ Note-App-Using-MERN-Stack-/
 - MongoDB account or local MongoDB installation
 - npm or yarn
 
-### Setup and Installation
+## 🚀 Setup and Installation Guide
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd Note-App-Using-MERN-Stack-
-   ```
+### 1. Clone the Repository:
+```bash
+git clone <repository-url>
+cd Note-App-Using-MERN-Stack-
+```
+---
 
-2. Set up the backend:
-   ```
-   cd backend
-   npm install
-   ```
+### 2. Set Up the Backend:
+```bash
+cd backend
+npm install            # Install all backend dependencies
+npm run dev            # Start backend with nodemon
+# Or use: node index.js (if nodemon isn't set up)
+```
 
-3. Create a `.env` file in the backend directory:
-   This file should contain:
-   ```
-   MONGO_URI=<your-mongodb-connection-string>
-   JWT_SECRET=<your-secret-key>
-   ```
-   - For MongoDB connection: Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-   - Generate a strong JWT secret (you can use a random string generator)
+📄 Create a `.env` file in the `backend/` directory with the following content:
+```env
+MONGO_URI=your-mongodb-connection-string
+JWT_SECRET=your-jwt-secret
+```
 
-4. Set up the frontend:
-   ```
-   cd ../frontend
-   npm install
-   ```
+✅ Replace:
+- `your-mongodb-connection-string` with your MongoDB URI (e.g., from [MongoDB Atlas](https://www.mongodb.com/cloud/atlas))
+- `your-jwt-secret` with a strong random key for JWT
 
-5. Start the backend server:
-   ```
-   cd ../backend
-   npm start
-   ```
-   The server should start on http://localhost:3000 (can vary)
+📢 **Expected terminal output after successful backend setup**:
+```
+Connected to mongoDB
+Server is running on port 3000
+```
 
-6. Start the frontend development server:
-   ```
-   cd ../frontend
-   npm run dev
-   ```
-   The frontend should be available at http://localhost:5173
+➡️ Once you see the above message, the backend is running on:  
+```
+http://localhost:3000
+```
+---
 
-7. Open your browser and navigate to http://localhost:5173 to use the applicatio
+### 3. Set Up the Frontend:
+```bash
+cd ../frontend
+npm install            # Install all frontend dependencies
+npm run dev            # Start the Vite development server
+```
+
+---
+
+### 4. Use the Application:
+Open your browser and go to:
+
+```
+http://localhost:5173
+```
+
+✅ The frontend connects to the backend API at `http://localhost:3000`
+
+---
+
 
 ### Troubleshooting
 
