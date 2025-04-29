@@ -90,7 +90,7 @@ http://localhost:3000
 
 ### 3. Set Up the Frontend:
 ```bash
-cd ../frontend
+cd frontend
 npm install            # Install all frontend dependencies
 npm run dev            # Start the Vite development server
 ```
