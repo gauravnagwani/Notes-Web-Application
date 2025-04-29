@@ -68,7 +68,6 @@ Note-App-Using-MERN-Stack-/
    ```
    MONGO_URI=<your-mongodb-connection-string>
    JWT_SECRET=<your-secret-key>
-   PORT=5000
    ```
    - For MongoDB connection: Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
    - Generate a strong JWT secret (you can use a random string generator)
@@ -84,7 +83,7 @@ Note-App-Using-MERN-Stack-/
    cd ../backend
    npm start
    ```
-   The server should start on http://localhost:5000
+   The server should start on http://localhost:3000 (can vary)
 
 6. Start the frontend development server:
    ```
@@ -93,7 +92,7 @@ Note-App-Using-MERN-Stack-/
    ```
    The frontend should be available at http://localhost:5173
 
-7. Open your browser and navigate to http://localhost:5173 to use the application
+7. Open your browser and navigate to http://localhost:5173 to use the applicatio
 
 ### Troubleshooting
 
