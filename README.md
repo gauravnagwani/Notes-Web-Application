@@ -1,4 +1,4 @@
-# Notes Application
+# Notes Web Application
 
 A full-stack notes application built using the MERN (MongoDB, Express, React, Node.js) stack.
 
